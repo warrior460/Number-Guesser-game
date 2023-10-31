@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guss the Number!</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <h3>Guess a number between 1 and 10. You have 3 attempts.</h3>
+       <h3>Can you guess it?</h3>
+
+       <input type="text" placeholder="Num" id="guess"><br>
+       <button onclick="play()" id="my_btn">GUESS</button>
+       <button id="playAgain" style="display: none;" onclick="resetGame()">Play Again</button>
+
+       <p id="message1">No. Of Guesses left: 3</p>
+       <p id="message2">Guessed Numbers are: None</p>
+       <p id="message3"></p>
+   </div>
+   <!--Script-->
+   <script src="script.js"></script>
+</body>
+</html>
